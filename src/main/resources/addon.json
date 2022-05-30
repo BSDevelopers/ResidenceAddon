@@ -1,0 +1,21 @@
+{
+  "name": "ResidenceAddon",
+  "author": "brainsynder",
+
+  "version": 0.1,
+  "supported-build": 163,
+
+  "description": [
+    "&7This addon hooks into",
+    "&7Residence to add pet",
+    "&7related flags to claims",
+    "&7(e.g. riding & spawning)"
+  ],
+
+  "plugin-support": [
+    {
+      "name": "Residence",
+      "url": "https://www.spigotmc.org/resources/11480/"
+    }
+  ]
+}
