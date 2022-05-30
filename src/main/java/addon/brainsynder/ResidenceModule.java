@@ -46,19 +46,15 @@ public class ResidenceModule extends RegionModule {
         SimplePets.getDebugLogger().debug(SimplePets.ADDON, "Adding pet related flags to Residence:");
 
         SPAWN = new FlagData(config.getString("checks.spawning.flag.name"), config.getBoolean("checks.spawning.flag.default-value"));
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "- '"+SPAWN.flagName()+"' with default value: "+SPAWN.defaultValue());
         FlagPermissions.addFlag(SPAWN.flagName());
 
         MOUNTING = new FlagData(config.getString("checks.mounting.flag.name"), config.getBoolean("checks.mounting.flag.default-value"));
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "- '"+MOUNTING.flagName()+"' with default value: "+MOUNTING.defaultValue());
         FlagPermissions.addFlag(MOUNTING.flagName());
 
         MOVING = new FlagData(config.getString("checks.moving.flag.name"), config.getBoolean("checks.moving.flag.default-value"));
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "- '"+MOVING.flagName()+"' with default value: "+MOVING.defaultValue());
         FlagPermissions.addFlag(MOVING.flagName());
 
         RIDING = new FlagData(config.getString("checks.riding.flag.name"), config.getBoolean("checks.riding.flag.default-value"));
-        SimplePets.getDebugLogger().debug(SimplePets.ADDON, "- '"+RIDING.flagName()+"' with default value: "+RIDING.defaultValue());
         FlagPermissions.addFlag(RIDING.flagName());
     }
 
@@ -99,6 +95,7 @@ public class ResidenceModule extends RegionModule {
         public FlagData(String flagName, boolean defaultValue) {
             this.flagName = flagName;
             this.defaultValue = defaultValue;
+            SimplePets.getDebugLogger().debug(SimplePets.ADDON, "- '"+flagName+"' with default value: "+defaultValue);
         }
 
         public String flagName() {
