@@ -49,7 +49,7 @@
             <version>B101</version>
         </dependency>
 
-        <dependency>
+        <dependency> <!-- I blame the developer for not having a simple maven repo for api support °_° -->
             <groupId>com.bekvon.bukkit.residence</groupId>
             <artifactId>Residence</artifactId>
             <version>5.0.1.6</version>
